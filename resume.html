@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Resume — Masamichi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      /* small page-scoped tweaks for the resume */
+      .resume-header{padding:28px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+      .resume-grid{display:grid;grid-template-columns:1fr 320px;gap:32px}
+      .sidebar{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px}
+      .section-title{font-weight:700;margin-bottom:8px}
+      @media (max-width:880px){.resume-grid{grid-template-columns:1fr}}
+      @media print{
+        body{background:white;color:black}
+        .site-header,.nav-toggle,.site-footer{display:none}
+        a[href]:after{content:""}
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html">Masamichi</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <nav id="nav" class="nav">
+          <a href="index.html">Home</a>
+          <a href="#">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="resume-header">
+        <h1 style="margin:0">Masamichi Nyunoya — Machine Learning Engineer</h1>
+        <div style="color:var(--muted)">Machine Learning Engineer seeking first career opportunity</div>
+      </div>
+
+      <div class="resume-grid" style="margin-top:20px">
+        <article>
+          <section>
+            <h2 class="section-title">Summary</h2>
+            <p>Seeking an entry-level opportunity in machine learning. Strong creative background and a passion for building ML-powered applications.</p>
+          </section>
+
+          <section>
+            <h2 class="section-title">Experience</h2>
+            <div style="margin-bottom:12px">
+              <p>N/A at the moment — looking for first career opportunity.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="section-title">Education</h2>
+            <div>
+              <strong>Bachelor's Degree, Fine Arts</strong><br>
+              <small class="muted">2016</small>
+            </div>
+          </section>
+        </article>
+
+        <aside class="sidebar">
+          <section>
+            <h3 class="section-title">Contact</h3>
+            <div>masa.nyunoya</div>
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/masamichi-nyunoya-136698201/">masamichi-nyunoya</a></div>
+          </section>
+
+          <section style="margin-top:16px">
+            <h3 class="section-title">Skills</h3>
+            <div>Add your skills here (e.g., Python, ML, TensorFlow)</div>
+          </section>
+
+          <section style="margin-top:16px">
+            <h3 class="section-title">Download</h3>
+            <p><a href="#" onclick="window.print();return false">Print / Save as PDF</a></p>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Masamichi</div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
